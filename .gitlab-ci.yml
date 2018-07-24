@@ -10,5 +10,8 @@ build:
   stage: build
   script:
     - docker login registry.ikt.im -u $REGISTRY_USER -p $REGISTRY_PASSWORD
-    - docker build -t registry.ikt.im/private/sanmap.ikkentim.com:latest .
-    - docker push registry.ikt.im/private/sanmap.ikkentim.com:latest
+    - docker build -t registry.ikt.im/$CI_PROJECT_PATH:latest .
+    - docker push registry.ikt.im/$CI_PROJECT_PATH:latest
+  only:
+    - master
+
