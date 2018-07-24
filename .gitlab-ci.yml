@@ -10,6 +10,6 @@ build:
   stage: build
   script:
     - docker login registry.ikt.im -u $REGISTRY_USER -p $REGISTRY_PASSWORD
-    - docker build -t registry.ikt.im/tim/timpotze.nl:latest .
-    - docker push registry.ikt.im/tim/timpotze.nl:latest
+    - docker build -t registry.ikt.im/tim/sanmap.ikkentim.com:latest .
+    - docker push registry.ikt.im/tim/sanmap.ikkentim.com:latest
 
