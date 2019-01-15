@@ -17,10 +17,11 @@
 <div id="map-canvas"></div>
 
 <!-- Load all javascript -->
-<script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0DkJ-ualAxmTK0iXBClPox8OyXitcwf0&callback=initMap" type="text/javascript"></script>
 <script src="js/SanMap.min.js"></script>
 <script>
-	/*
+    function initMap() {
+    /*
 	 * Define the map types we will be using.
 	 *
 	 * SanMapType parameters: minZoom, maxZoom, getTileUrlFunction, [optional]tileSize.
@@ -122,5 +123,7 @@
 	//		var pos = SanMap.getPosFromLatLng(event.latLng);
     //        alert(pos.x + "," + pos.y);
     //    }); 
+    
+    } // initMap
 </script>
 </body>
