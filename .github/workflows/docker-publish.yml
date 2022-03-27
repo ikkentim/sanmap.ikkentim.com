@@ -8,7 +8,7 @@ on:
 
 env:
   REGISTRY: registry.ikt.im
-  IMAGE_NAME: sampsharp.net
+  IMAGE_NAME: sanmap.ikkentim.com
 
 jobs:
   build:
